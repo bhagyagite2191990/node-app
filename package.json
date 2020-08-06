@@ -1,0 +1,22 @@
+{
+	"name": "bhagyashri-nodeapp",
+	"version": "1.0.0",
+	"description": "a hello world http server using node js",
+	"main": "main.js",
+	"scripts": {
+		"test": "node test.js",
+		"start": "node main.js"
+	},
+	"repository":{
+		"type": "git",
+		"url": "https://github.com/bhagyagite2191990/nodeapp"
+	},
+	"keywords": [
+		"node",
+		"docker",
+		"dockerfile"
+	],
+	"author": "bhagyashri",
+	"license": "ISC",
+	"devDependencies": { "test": ">=0.6.0" }
+}
