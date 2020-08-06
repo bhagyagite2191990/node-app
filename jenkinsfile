@@ -1,7 +1,7 @@
 node{
     def app
     
-    stage('clone repository'){
+    stage('Clone repository'){
         /* cloning repository to our workspace */
         checkout scm
     }
@@ -15,12 +15,12 @@ node{
      
         app.inside{
         echo "Test passed"
-    	}
+	}
     }
     stage('Push image'){
         /* you would need to first register with DockerHub before you can push images to you account */
         
-        docker.withRegistry("https://registry.hub.docker.com", 'bhagyadocker21"){
+        docker.withRegistry("https://registry.hub.docker.com", "bhagyadocker21"){
             app.push("${env.BUILD_NUMBER}")
             app.push("latest")
             }
